@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Leader Contact List</h1>
+    </header>
+    <main>
+        <ul class="contacts">
+
+        </ul>
+    </main>
+    <footer>
+        <div class="fab"></div>
+        <p class="footer">&copy;<?php echo date('Y') ?> Danilo Murta</p>
+    </footer>
+    <div class="overlay">&nbsp;</div>
+
+    <section class="contactForm">
+        <h2>Contact Form</h2>
+        <div class="error"></div>
+        <form>
+            <input type="text" id="input-name" required placeholder="Full Name" />
+            <input type="email" id="input-email" placeholder="E-mail Address" required>
+            <input type="text" id="input-phone" placeholder="Phone number" required>
+            <div class="button-container">
+                <button id="button-cancel">Cancel</button>
+                <button id="button-save" data-id="0"> Save</button>
+            </div>
+        </form>
+    </section>
+    <script type="text/javascript" src="js/contacts.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
